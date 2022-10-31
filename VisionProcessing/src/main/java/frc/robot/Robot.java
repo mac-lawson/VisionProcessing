@@ -10,12 +10,11 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
-import frc.robot.ControlSystem;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.RelativeEncoder;
 import com.revrobotics.SparkMaxPIDController;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
-
+import frc.robot.constants;
 /**
  * The VM is configured to automatically run this class, and to call the functions corresponding to
  * each mode, as described in the TimedRobot documentation. If you change the name of this class or
@@ -46,10 +45,11 @@ public class Robot extends TimedRobot {
 
 
     motor = new CANSparkMax(0, MotorType.kBrushless);
+    if (constants.rampSpeed) {
+      motor.setClosedLoopRampRate(.75);
+    }
     controller = new XboxController(0);
 
-    //configure motor
-    motor.setClosedLoopRampRate(.75);
     
   }
 
@@ -75,7 +75,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void autonomousInit() {
-
+    
   }
 
   /** This function is called periodically during autonomous. */
@@ -93,9 +93,10 @@ public class Robot extends TimedRobot {
   public void teleopPeriodic() {
     
     SmartDashboard.putNumber("Motor", (motor.get() * 100));
+    SmartDashboard.putNumber("Closed Loop Ramp", motor.getClosedLoopRampRate());
     motor.set(controller.getLeftY());
 
-    
+
 
   }
 
