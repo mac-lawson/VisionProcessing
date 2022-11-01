@@ -34,5 +34,6 @@ To recreate this project, you need to import the proper vendor's libraries.
 '''
 https://maven.photonvision.org/repository/internal/org/photonvision/PhotonLib-json/1.0/PhotonLib-json-1.0.json
 '''
-https://docs.photonvision.org/en/latest/_images/adding-offline-library.png
+
+![wpilibvscode](https://docs.photonvision.org/en/latest/_images/adding-offline-library.png)
 
