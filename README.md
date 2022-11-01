@@ -28,3 +28,11 @@ Now, using GRIP, we can isolate the lines of the image.
 ![firstlogo](https://i.postimg.cc/6p7MS56v/Screen-Shot-2022-10-29-at-7-30-27-PM.png)
 Lastly, use network tables to send the data to Shuffleboard. 
 
+
+## Adding Vendor Libs to Robot Project
+To recreate this project, you need to import the proper vendor's libraries. 
+'''
+https://maven.photonvision.org/repository/internal/org/photonvision/PhotonLib-json/1.0/PhotonLib-json-1.0.json
+'''
+https://docs.photonvision.org/en/latest/_images/adding-offline-library.png
+

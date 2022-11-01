@@ -31,11 +31,6 @@ public class Robot extends TimedRobot {
   private SparkMaxPIDController pidcontroller;
   private RelativeEncoder encoder;
 
-
-
-
-
-
   /**
    * This function is run when the robot is first started up and should be used for any
    * initialization code.
@@ -44,11 +39,7 @@ public class Robot extends TimedRobot {
   public void robotInit() {
 
 
-    motor = new CANSparkMax(0, MotorType.kBrushless);
-    if (constants.rampSpeed) {
-      motor.setClosedLoopRampRate(.75);
-    }
-    controller = new XboxController(0);
+
 
     
   }
@@ -92,9 +83,7 @@ public class Robot extends TimedRobot {
   @Override
   public void teleopPeriodic() {
     
-    SmartDashboard.putNumber("Motor", (motor.get() * 100));
-    SmartDashboard.putNumber("Closed Loop Ramp", motor.getClosedLoopRampRate());
-    motor.set(controller.getLeftY());
+    
 
 
 
