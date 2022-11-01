@@ -1,5 +1,5 @@
 
-# GRIP Computer Vision for FIRST Robotics
+#Computer Vision for FIRST Robotics
 ![firstlogo](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.team2052.com%2Fassets%2Fimages%2Ffirstlogo.jpg&f=1&nofb=1&ipt=745e90197c9d987d98c9c16be29742cae4314d2a01173d5948efc7dfe54381a5&ipo=images)
 
 ### About:
@@ -7,6 +7,9 @@ GRIP is a tool for developing computer vision algorithms interactively rather th
 
 GRIP is based on OpenCV, one of the most popular computer vision software libraries used for research, robotics, and vision algorithm implementations. The operations that are available in GRIP are almost a 1 to 1 match with the operations available if you were hand coding the same algorithm with some text-based programming language.
 
+With a GRIP pipeline, you can import the code in to a java library for processing spun up on a microprocessor (like a Raspberry Pi). For this project, I will be using PhotonVision. 
+
+![photonlogo](https://photonvision.org/images/Logos/Header/PNG/PhotonVision-Header-noBG.png)
 
 ## Developers
 
