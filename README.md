@@ -31,9 +31,9 @@ Lastly, use network tables to send the data to Shuffleboard.
 
 ## Adding Vendor Libs to Robot Project
 To recreate this project, you need to import the proper vendor's libraries. 
-'''
+```
 https://maven.photonvision.org/repository/internal/org/photonvision/PhotonLib-json/1.0/PhotonLib-json-1.0.json
-'''
+```
 
 ![wpilibvscode](https://docs.photonvision.org/en/latest/_images/adding-offline-library.png)
 
